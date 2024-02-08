@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mashinneun/static/css/main.049a9ad3.css",
+    "main.js": "/mashinneun/static/js/main.5d28b8d1.js",
+    "static/js/592.b5ef54f3.chunk.js": "/mashinneun/static/js/592.b5ef54f3.chunk.js",
+    "static/media/banner.jpg": "/mashinneun/static/media/banner.5d19a6622c6d0305b94d.jpg",
+    "index.html": "/mashinneun/index.html",
+    "main.049a9ad3.css.map": "/mashinneun/static/css/main.049a9ad3.css.map",
+    "main.5d28b8d1.js.map": "/mashinneun/static/js/main.5d28b8d1.js.map",
+    "592.b5ef54f3.chunk.js.map": "/mashinneun/static/js/592.b5ef54f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.049a9ad3.css",
+    "static/js/main.5d28b8d1.js"
+  ]
+}
