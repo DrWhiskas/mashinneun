@@ -3,19 +3,8 @@
     height: 60vh;
     width: 100%;
     overflow: hidden;
-    background-color: black;
+    margin-bottom: 5%;
 }
-
-.slider-images{
-    position: relative;
-    width: 100%;
-}
-.slider-image img{
-    object-fit: cover;
-}
-
-
-/*
 .slider-images{
     display: flex;
     justify-content: center;
@@ -52,4 +41,3 @@
 .slider-next img{
     
 }
-*/
