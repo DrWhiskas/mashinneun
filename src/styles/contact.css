@@ -1,0 +1,85 @@
+.contact{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: white;
+    margin-top: 5%;
+}
+.contact a{
+    color: white;
+}
+.contact__info__title{
+    width: 100%;
+}
+.contact__form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+.form__item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1%;
+}
+.form__item__input{
+    padding: 10% 10% 10% 3%;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+}
+.form__item__input:hover,.form__item__message:hover{
+    border: 1px solid white;
+}
+.submit{
+    display: flex;
+    flex-direction: column;
+}
+.subject{
+    position: relative;
+}
+
+
+.form__item__message{
+    background: transparent;
+    height: 20vh;
+    width: 27vw;
+    color: white;
+    padding: 3% 3%;
+    border: none;
+    border-bottom: 2px solid white ;
+}
+.contact-btn{
+    background-color: white;
+    color: black;
+    border: none;
+    height: 5vh;
+    width: 100%;
+    font-size: large;
+    margin: 1%;
+    transition: all ease-in-out .2s;
+}
+.contact-btn:hover{
+    cursor: pointer;
+    background-color: rgb(146, 146, 146);
+    color: white;
+    font-weight: bolder;
+}
+.contact__info__title{
+    font-size: xx-large;
+}
+.contact__info__text__item{
+    padding: 3% 0%;
+}
+
+.schedule{
+    margin-top: 10%;
+}
+
+
+@media screen and (max-width: 767px ) {
+    
+}

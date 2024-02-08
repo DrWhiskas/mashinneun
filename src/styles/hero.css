@@ -1,0 +1,45 @@
+.hero{
+    height: 91vh;
+    width: 100%;
+    background-image: url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero__container{
+    color: white;
+    position: relative;
+    width: 50%;
+    height: 91vh;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.342);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero__container__title{
+    font-size: 5vw ;
+}
+.hero__container__text{
+    font-size: 1.3vw;
+}
+
+@media screen and (max-width: 767px) {
+    .hero{
+        height: 55vh;
+    }
+    .hero__container{
+        height: 55vh;
+    }
+    .hero__container__title{
+        font-size: 25px ;
+    }
+    .hero__container__text{
+        position: relative;
+        top: 5%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
