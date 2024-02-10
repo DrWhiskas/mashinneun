@@ -29,15 +29,10 @@
 .slider-image{
     object-fit: cover;
 }
-.slider-previous{
 
-}
-.slider-previous img{
-
-}
-.slider-next{
-
-}
-.slider-next img{
+@media screen and (max-width: 767px) {
+    .slider-image img{
+        height: 65%;
+    }
     
 }

@@ -1,0 +1,13 @@
+.localisation__map{
+    height: 450px;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .localisation{
+        margin-top: -20%;;
+    }
+    .localisation__map{
+        height: 340px;
+    }
+}

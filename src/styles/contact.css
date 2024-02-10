@@ -92,7 +92,8 @@
     }
     .contact__form{
         flex-direction: column;
-        align-self: center;
+        width: 100%;
+        align-content: center;
         margin-top: 10%;
     }
     .form__item__message{

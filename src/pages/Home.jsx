@@ -15,9 +15,9 @@ export default function Home(){
 				<Hero />
 				<History />
 				<Slider images={sliderImages.HomeSlider} />
-                <Localisation />
-                <Contact />
-                <Footer />
+				<Localisation />
+				<Contact />
+				<Footer />
 			</div>
 		);
 }
