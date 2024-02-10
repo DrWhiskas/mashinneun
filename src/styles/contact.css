@@ -81,5 +81,21 @@
 
 
 @media screen and (max-width: 767px ) {
-    
+    .contact{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .contact__info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact__form{
+        flex-direction: column;
+        align-self: center;
+        margin-top: 10%;
+    }
+    .form__item__message{
+        width: 100%;
+    }
 }
