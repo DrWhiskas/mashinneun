@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/logoDesign.png';
 import '../styles/header.css'
 export default function Header() {
@@ -9,7 +10,7 @@ export default function Header() {
 	function LinkBuild({ text, link }) {
 		return (
 			<li>
-				<a className="header__container__links__link" href={link}>{text}</a>
+				<Link className="header__container__links__link" to={link}>{text}</Link>
 			</li>
 		);
 	}
@@ -21,8 +22,8 @@ export default function Header() {
 					<img className="header__container__logo" src={Logo} alt="logo" />
 				</a>
 				<ul className="header__container__links">
-					<LinkBuild text="Accueil" link="#" />
-					<LinkBuild text="À propos" link="#" />
+					<LinkBuild text="Accueil" link="/home" />
+					<LinkBuild text="À propos" link="/about" />
 					<LinkBuild text="Réservation" link="#" />
 					<LinkBuild text="Boutique" link="#" />
 				</ul>

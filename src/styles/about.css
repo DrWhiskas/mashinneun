@@ -1,0 +1,22 @@
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin-top: 5%;
+}
+.about__title{
+    margin-bottom: 5%;
+    display: flex;
+    align-self: center;
+    font-size: 3vw;
+    justify-content: center;
+}
+.about__text{
+    display: flex;
+    text-align: center;
+    width: 60%;
+    align-self: center;
+    font-size: 1.2vw;
+    margin-bottom: 5%;
+}
