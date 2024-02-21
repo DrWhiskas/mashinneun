@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logoDesign.png';
-import '../styles/header.css'
+import '../styles/header.css';
+
 export default function Header() {
 	const [showLinks, setShowLinks] = useState(false);
 	function handleShowLinks() {
 		setShowLinks(!showLinks);
 	}
+	// component to build a navigation link
 	function LinkBuild({ text, link }) {
 		return (
 			<li>
-				<Link className="header__container__links__link" to={link}>{text}</Link>
+				<Link className="header__container__links__link" to={link}>
+					{text}
+				</Link>
 			</li>
 		);
 	}
-
+	// render 
 	return (
 		<header className={showLinks ? 'header show-header' : 'header'}>
 			<nav className="header__container">
@@ -24,7 +28,7 @@ export default function Header() {
 				<ul className="header__container__links">
 					<LinkBuild text="Accueil" link="/home" />
 					<LinkBuild text="À propos" link="/about" />
-					<LinkBuild text="Réservation" link="#" />
+					<LinkBuild text="Réservation" link="/reservation" />
 					<LinkBuild text="Boutique" link="#" />
 				</ul>
 				<button className="header__burger" onClick={handleShowLinks}>

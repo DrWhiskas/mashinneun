@@ -8,7 +8,7 @@ export default function Slider({images}){
         setCurrentIndex((currentIndex + 1) % images.length);
     }
 
-    // Changement automatique des images
+    // automatic slider
     useEffect(() => {
 			const timer = setTimeout(() => {
 				nextSlide();

@@ -1,0 +1,38 @@
+.reservation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5% ;
+}
+.reservation__container__info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
+}
+.reservation__container__info-form__item{
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(219, 219, 219);
+    width: 20svw;
+    padding: 2%;
+}
+
+.btn-reservation{
+    min-width: 10%;
+    padding: 1%;
+    place-self: center;
+}
+.reservation__container__title, 
+.reservation__container__text{
+    text-align: center;
+}
+.reservation__container__title{
+    margin-bottom: 2%;
+}
+.reservation__container__text{
+    margin-bottom: 7%;
+}
+.reservation__container{
+    margin-bottom: 5%;
+}

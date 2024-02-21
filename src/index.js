@@ -4,6 +4,7 @@ import './index.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Reservation from './pages/Reservation';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +14,8 @@ root.render(
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/home" element={<Home />} />
-				<Route path='/about' element={<About />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/reservation" element={<Reservation />} />
 			</Routes>
 		</HashRouter>
 	</React.StrictMode>
