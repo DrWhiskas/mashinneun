@@ -4,7 +4,7 @@ import '../styles/history.css'
 export default function History(){
     return (
 			<section className="history">
-				<h1 className="history__title">Notre histoire</h1>
+				<h1 className="history__title title">Notre histoire</h1>
 				<p className="history__text">
 					Il peut sembler difficile de se démarquer tant la compétition dans la
 					restauration est devenue difficile mais Mashinneun propose une

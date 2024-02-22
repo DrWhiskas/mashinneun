@@ -12,9 +12,16 @@ export default function Contact() {
 	const [message, setMessage] = useState('');
 	const [submit, setSubmit] = useState(false);
 
-	function handleSubmit({ e }) {
-		e.preventDefault();
-		setSubmit(true);
+	function handleSubmit() {
+		const submitInfo = {
+			name: name,
+			email: email,
+			phone: phone,
+			address: address,
+			subject: subject,
+			message: message,
+		}
+		console.log(submitInfo);
 	}
 
 	return (
@@ -114,7 +121,7 @@ export default function Contact() {
 						/>
 					</div>
 
-					<button className="contact-btn" type="submit">
+					<button className="contact-btn" onClick={handleSubmit}>
 						Envoyer
 					</button>
 

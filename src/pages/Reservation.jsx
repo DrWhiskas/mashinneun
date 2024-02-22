@@ -5,19 +5,30 @@ import '../styles/reservation.css'
 export default function Reservation() {
 
     const [date, setDate] = useState('')
+	const [groupSize, setGroupSize] = useState('1');
+	const [hour, setHour] = useState('1');
+	
 
     useEffect(() => {
         const today = new Date().toISOString().split('T')[0];
         setDate(today)
         console.log(today);
     }, [])
+
+	function handleReservation(){
+		const reservationInfo = {
+			date: date,
+			groupSize: groupSize,
+			hour: hour
+		};
+	}
         
 	return (
 		<>
 			<Header />
 			<section className="reservation">
 				<div className="reservation__container">
-					<h1 className="reservation__container__title">
+					<h1 className="reservation__container__title title">
 						Effectuer une réservation
 					</h1>
 					<p className="reservation__container__text">
@@ -33,6 +44,7 @@ export default function Reservation() {
 								className="reservation__container__info-form__item"
 								name="group"
 								id="group"
+								onChange={(e) => setGroupSize(e.target.value)}
 							>
 								<option value="1">1 personne</option>
 								<option value="2">2 personnes</option>
@@ -51,6 +63,8 @@ export default function Reservation() {
 								type="date"
 								name="date"
 								id="date"
+								value={date}
+								onChange={(e) => setDate(e.target.value)}
 							/>
 						</div>
 						<div className="reservation__container__info-form">
@@ -61,6 +75,7 @@ export default function Reservation() {
 								className="reservation__container__info-form__item"
 								name="hour"
 								id="hour"
+								onChange={(e) => setHour(e.target.value)}
 							>
 								<option value="1">19:00</option>
 								<option value="2">19:30</option>
@@ -74,7 +89,7 @@ export default function Reservation() {
 						</div>
 					</div>
 				</div>
-				<button className="btn btn-reservation">Réserver</button>
+				<button className="btn btn-reservation" onClick={handleReservation}>Réserver</button>
 			</section>
 			<Footer />
 		</>

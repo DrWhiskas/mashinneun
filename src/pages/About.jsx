@@ -11,7 +11,7 @@ export default function About() {
 			<>
 				<Header />
 				<section className="about">
-					<h2 className="about__title">Qui sommes-nous</h2>
+					<h2 className="about__title title">Qui sommes-nous</h2>
 					<p className="about__text">
 						Le rêve d'ouvrir un restaurant est devenu réalité quand Mashinneun a
 						ouvert en 2000. <br />
