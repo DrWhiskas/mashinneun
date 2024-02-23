@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Header from '../components/Header';
+import Modal from '../components/Modal';
 import Footer from '../components/Footer';
 import '../styles/reservation.css'
 export default function Reservation() {
@@ -7,6 +8,7 @@ export default function Reservation() {
     const [date, setDate] = useState('')
 	const [groupSize, setGroupSize] = useState('1');
 	const [hour, setHour] = useState('1');
+	const [isOpen, setIsOpen] = useState(false)
 	
 
     useEffect(() => {
@@ -21,6 +23,14 @@ export default function Reservation() {
 			groupSize: groupSize,
 			hour: hour
 		};
+		handleOpenModal()
+	}
+	
+	function handleCloseModal(){
+		setIsOpen(false)
+	}
+	function handleOpenModal(){
+		setIsOpen(true)
 	}
         
 	return (
@@ -89,7 +99,14 @@ export default function Reservation() {
 						</div>
 					</div>
 				</div>
-				<button className="btn btn-reservation" onClick={handleReservation}>Réserver</button>
+				<button className="btn btn-reservation" onClick={handleReservation}>
+					Réserver
+				</button>
+				<div>
+					{isOpen ? 
+						<Modal text='Merci pour votre réservation !' handleCloseModal={handleCloseModal}/> : ''
+					}
+				</div>
 			</section>
 			<Footer />
 		</>
