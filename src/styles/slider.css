@@ -1,4 +1,4 @@
-.slider{
+/*.slider{
     position: relative;
     height: 60vh;
     width: 100%;
@@ -7,8 +7,8 @@
 }
 .slider-images{
     display: flex;
-    justify-content: center;
     width: 100%;
+    flex-direction: column;
     height: 100%;
     object-fit: cover;
     transition: all ease-in-out .2s;
@@ -19,7 +19,7 @@
 }
 .active{
     display: flex;
-    transition: all ease-in-out .2s;
+    
 }
 .slider-image img {
   width:  100%;
@@ -29,10 +29,49 @@
 .slider-image{
     object-fit: cover;
 }
-
+.slider-previous img{
+    display: flex;
+    left: 80%;
+}
+.slider-next img{
+    display: flex;
+    right: 100%;
+}
+*/
 @media screen and (max-width: 767px) {
     .slider-image img{
         height: 65%;
     }
     
+}
+
+
+.hidden{
+    display: none;
+}
+.active, 
+.slider-previous,
+.slider-next{   
+    height: 250px;
+    width: 250px;
+}
+.slider{
+    height: 50vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider__images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+}
+.image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
